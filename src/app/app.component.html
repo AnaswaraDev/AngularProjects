@@ -1,7 +1,7 @@
 <h4 class="text-primary">  welcome to mywebsite </h4>
 <h5></h5>
 
-<a [href]="hrefVal" [attr.updateLink]='updatedLink'[attr.data-link]='updatedLink'> Google </a> 
+<!-- <a [href]="hrefVal" [attr.updateLink]='updatedLink'[attr.data-link]='updatedLink'> Google </a> 
 
 <h5>NgIf with else statement</h5>
 
@@ -95,8 +95,59 @@
 
 <button (click)="showAlert();">click me</button>
 
-<h5>two way databinding example</h5>
+<h5>two way databinding example</h5> -->
 
 <!--<input [(ngModel)]="firstname" >  -->
 
+<!--<h5>PIPE example- built in pipes</h5>
+
+ 
+<div>  
+    {{user.firstName | lowercase }}, {{user.lastName |uppercase  }}
+</div>
+
+<div>  
+    {{user.DOB | date }}, {{user.DOB | date : 'MMMM' }} , 
+    {{user.DOB | date : 'MMMM dd' }} 
+</div>
+
+<div>  
+    {{user.salary  }} , {{user.salary | currency }},
+     {{user.salary | currency:'INR' }}, {{user.salary | currency:'USD' }}
+     ,{{user.salary | currency:'INR' :'code' }}
+</div>
+<div>  
+    {{user|json  }} 
+</div>
+<div>  
+    {{user }} 
+</div>
+
+<h5>parametrized pipe example</h5>
+
+<div>  
+    {{user.DOB | date : 'short' }},------
+    {{user.DOB | date : 'medium' }},-----
+    {{user.DOB | date : 'long' }},-----
+     {{user.DOB | date : 'full' }},-----
+     {{user.DOB | date : 'shortDate' }},-----
+     {{user.DOB | date : 'mediumDate' }},-----
+     {{user.DOB | date : 'fullDate' }},-----
+     {{user.DOB | date : 'shortTime' }},-----
+     {{user.DOB | date : 'mediumTime' }},-----
+     {{user.DOB | date : 'longTime' }},-----
+     {{user.DOB | date : 'fullTime' }},-----
+</div> 
+
+
+<h5>chaining pipes</h5>
+<div> 
+    {{user.DOB |date |uppercase }}
+</div>  -->
+
+<h5>custom pipe example</h5>
+
+<div [innerHTML]="user.city| highlight : user.city " ></div>
+
 <router-outlet></router-outlet> 
+

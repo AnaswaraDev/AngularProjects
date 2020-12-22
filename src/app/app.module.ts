@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TodoModule }  from './todo/todo.module';
 import { TasksComponent } from './tasks/tasks.component';
 import { NgModelModule}  from './ng-model/ng-model.module';
+import { HighlightPipe } from './highlight.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent 
+    TasksComponent,
+    HighlightPipe 
   ],
   imports: [
     BrowserModule,

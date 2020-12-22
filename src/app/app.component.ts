@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
    title ='my-app1';
 
    
-   hrefVal='http://google.com';
+  /* hrefVal='http://google.com';
    updatedLink = 'oracle.com';
 
    showMsg =false;
@@ -50,34 +50,36 @@ hrefValue='http://google.com';
 
  showAlert(){
   alert('hello from abc tutorials' );
- }
+ }   */
 
 //firstname= '';
 
+//pipe example
+
+/*user = {
+  userId : 20,
+  firstName : 'abc',
+  lastName : 'tutorials',
+  DOB : '12/03/1998' ,
+  salary : 25000
+} ;    */
+
+
+user ={
+  firstName : 'Rohit',
+  city : 'Ernakulam',
+  cityCode : 'EK'
+}
+
+
+
+
+
   }
+
 
   
    
   
 
 
-
-   /*readfirstname(){
-     console.log(this.firstname);
-   } */
-
-
-
-
-
-
-
-  
-
-   //episode = '17'
-   //subTitle = 'learn interpolation'
-  // firstname ='';
-  
-
- 
-  
