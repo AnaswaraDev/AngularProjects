@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -31,10 +32,31 @@ colorVal = 'green';
 
 clsName = 'one';
 
+subTitle = 'learn interpolation'
+episode = '17'
 
+user = {
+userId : 200,
+username : 'ABC',
+status : 'active'
+}
+
+colorValue= 'red';
+
+subTitles = 'learn interpolations'
+
+hrefValue='http://google.com';
+ updatedLinks = 'oracle.com';
+
+ showAlert(){
+  alert('hello from abc tutorials' );
+ }
+
+//firstname= '';
 
   }
 
+  
    
   
 

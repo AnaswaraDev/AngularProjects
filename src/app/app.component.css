@@ -1,8 +1,3 @@
-.c1{
-    background-color: #ddd;
-}
-
-
 .one {
     color :red;
 }
@@ -10,3 +5,10 @@
     
     background-color: #ddd;
   }
+
+
+
+  .c1{
+      color : green;
+    background-color: #ddd;
+}

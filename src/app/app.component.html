@@ -66,9 +66,37 @@
 
 <h5>ngClass multipleclass example</h5>
 
-<div [ngClass]="{'one': true ,'two':true}"> 
-    ngclass examples</div>
+<div [ngClass]="{'one': true ,'two':true}"> ngclass examples</div>
+
+<h5> databinding interpolation</h5>
+
+<div>{{subTitle}}</div>
+<div>{{17}}</div>
+
+<div>{{ user.userId}}</div>
+<div>{{ user.username}}</div>
+<div>{{ user.status}}</div>
+
+<h5> databinding property bninding</h5>
+
+<div [ngStyle]="{color:colorValue}">this is property binding</div>
+
+<h5> databinding innerhtml property bninding</h5>
+
+<P [innerHTML]='subTitles'></P>
+
+<div [ngClass]= "'c1'">setting class property with property binding</div> 
+
+<h5>attribute binding example</h5>
+<a [href]="hrefValue" [attr.updateLink]='updatedLinks'[attr.data-link]='updatedLink'> Google </a> 
 
 
+<h5>event binding example</h5>
+
+<button (click)="showAlert();">click me</button>
+
+<h5>two way databinding example</h5>
+
+<!--<input [(ngModel)]="firstname" >  -->
 
 <router-outlet></router-outlet> 
