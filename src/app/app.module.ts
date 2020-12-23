@@ -7,12 +7,15 @@ import { TodoModule }  from './todo/todo.module';
 import { TasksComponent } from './tasks/tasks.component';
 import { NgModelModule}  from './ng-model/ng-model.module';
 import { HighlightPipe } from './highlight.pipe';
+import { LocationStrategy ,HashLocationStrategy } from '@angular/common';
+import { OrderViewComponent } from './order-view/order-view.component' ;
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
-    HighlightPipe 
+    HighlightPipe,
+    OrderViewComponent 
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,9 @@ import { HighlightPipe } from './highlight.pipe';
     NgModelModule
     
   ],
-  providers: [],
+  providers: [
+   // {provide :LocationStrategy , useClass :HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

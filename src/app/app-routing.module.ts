@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { TasksComponent } from './tasks/tasks.component' ;
+import {OrderViewComponent} from './order-view/order-view.component';
+const routes: Routes = [ 
+  { path : 'learning', component : TasksComponent },
+  {path: 'order/:id', component : OrderViewComponent}
+];
 
-const routes: Routes = [];
+
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

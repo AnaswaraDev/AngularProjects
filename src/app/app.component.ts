@@ -65,11 +65,11 @@ hrefValue='http://google.com';
 } ;    */
 
 
-user ={
+/* user ={
   firstName : 'Rohit',
   city : 'Ernakulam',
   cityCode : 'EK'
-}
+} */
 
 
 
