@@ -8,14 +8,16 @@ import { TasksComponent } from './tasks/tasks.component';
 import { NgModelModule}  from './ng-model/ng-model.module';
 import { HighlightPipe } from './highlight.pipe';
 import { LocationStrategy ,HashLocationStrategy } from '@angular/common';
-import { OrderViewComponent } from './order-view/order-view.component' ;
+import { OrderViewComponent } from './order-view/order-view.component';
+import { SearchComponent } from './search/search.component' ;
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
     HighlightPipe,
-    OrderViewComponent 
+    OrderViewComponent,
+    SearchComponent 
   ],
   imports: [
     BrowserModule,
