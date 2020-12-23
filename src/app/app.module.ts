@@ -9,7 +9,12 @@ import { NgModelModule}  from './ng-model/ng-model.module';
 import { HighlightPipe } from './highlight.pipe';
 import { LocationStrategy ,HashLocationStrategy } from '@angular/common';
 import { OrderViewComponent } from './order-view/order-view.component';
-import { SearchComponent } from './search/search.component' ;
+import { SearchComponent } from './search/search.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductViewComponent } from './product-view/product-view.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductIdComponent } from './product-id/product-id.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component' ;
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { SearchComponent } from './search/search.component' ;
     TasksComponent,
     HighlightPipe,
     OrderViewComponent,
-    SearchComponent 
+    SearchComponent,
+    ProductsComponent,
+    ProductViewComponent,
+    ProductEditComponent,
+    ProductIdComponent,
+    PageNotFoundComponent 
   ],
   imports: [
     BrowserModule,
