@@ -7,11 +7,16 @@ import { ProductsComponent } from './products/products.component';
 import {  ProductViewComponent } from './product-view/product-view.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import {  ProductIdComponent} from './product-id/product-id.component';
-import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
+//import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminGuardGuard } from './admin-guard.guard';
+import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [ 
   
   {path :'' , redirectTo : 'products', pathMatch :'full'} ,
+  {path : 'signin', component : SigninComponent } ,
+  { path : 'admin', component: AdminHomeComponent, canActivate : [AdminGuardGuard] },
   { path :  'products', 
        // component : ''
         children : [
@@ -28,7 +33,7 @@ const routes: Routes = [
   { path : 'learning', component : TasksComponent },
   {path: 'order/:id', component : OrderViewComponent}, //path in dynamic
   {path : 'search', component : SearchComponent } ,
-{path : '**', component : PageNotFoundComponent}
+//{path : '**', component : PageNotFoundComponent}
 
  
 ];

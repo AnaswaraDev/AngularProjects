@@ -14,8 +14,11 @@ import { ProductsComponent } from './products/products.component';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductIdComponent } from './product-id/product-id.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component' ;
-
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { SigninComponent } from './signin/signin.component' ;
+import { FormsModule } from '@angular/forms'; 
+///import { NgForm }   from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,15 +30,19 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProductViewComponent,
     ProductEditComponent,
     ProductIdComponent,
-    PageNotFoundComponent 
+    PageNotFoundComponent,
+    AdminHomeComponent,
+    SigninComponent ,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TodoModule,
-    NgModelModule
-    
-  ],
+    FormsModule,
+    NgModelModule,
+    //NgForm
+  ], 
   providers: [
    // {provide :LocationStrategy , useClass :HashLocationStrategy}
   ],

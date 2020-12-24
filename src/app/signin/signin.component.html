@@ -1,0 +1,34 @@
+<h5>Sign In- Using Template Driven Forms </h5>
+<div class="container">
+     <!--<form #signinForm="ngForm" (ngSubmit)="loginUser();" > -->
+      <form #signInForm="ngForm" (ngSubmit)="loginUser(signInForm)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" name="emailAddress" ngModel required>
+          <small id="emailHelp" class="form-text text-muted" ngIF="emailAddress.touched && !emailAddress.valid">Enter email address</small> 
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="passwordFeild" ngModel required>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="termsFeild" ngModel required >
+          <label class="form-check-label" for="exampleCheck1">Agree To Terms</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" value="male" id="genderFeild" name="genderFeild" ngModel required >
+          <label class="form-check-label" for="exampleCheck1">Male</label>
+        </div> 
+        <div class="form-check">
+          <input type="radio" class="form-check-input" value="female" id="genderFeild" name="genderFeild" ngModel required >
+          <label class="form-check-label" for="exampleCheck1">Female</label>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Notes</label>
+          <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" name="notesFeild" ngModel>
+          </textarea>
+            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!signInForm.valid">submit</button>
+      </form>
+</div>
