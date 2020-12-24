@@ -13,7 +13,7 @@ export class SigninComponent implements OnInit {
   loginUser(signInForm : NgForm)
   {
     console.log(signInForm);
-    console.log("email :  "+signInForm.value.emailAddress); //extract email here
+    console.log("email :  "+signInForm.value.emailAddressField); //extract email here
     console.log("pass:  "+signInForm.value.passwordFeild);
     console.log("terms :  " +signInForm.value.termsFeild);
     console.log("radio:  "+signInForm.value.genderFeild);

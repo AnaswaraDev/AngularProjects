@@ -4,12 +4,13 @@
       <form #signInForm="ngForm" (ngSubmit)="loginUser(signInForm)">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" name="emailAddress" ngModel required>
-          <small id="emailHelp" class="form-text text-muted" ngIF="emailAddress.touched && !emailAddress.valid">Enter email address</small> 
+          <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="emailAddress" aria-describedby="emailHelp" name="emailAddressField" ngModel required #emailAddressField="ngModel">
+          <small id="emailHelp" class="form-text text-muted" *ngIf="emailAddressField.touched && ! emailAddressField.valid">Enter email address</small> 
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="passwordFeild" ngModel required>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="passwordFeild" ngModel required #passwordFeild ="ngModel">
+          <small id="emailHelp" class="form-text text-muted" *ngIf="passwordFeild.touched && !passwordFeild.valid">Enter password </small> 
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" name="termsFeild" ngModel required >
