@@ -9,17 +9,22 @@ import { ActivatedRoute} from '@angular/router';
   styleUrls: ['./product-id.component.css']
 })
 export class ProductIdComponent implements OnInit {
-
-/*   queryParams = '' ;
+ constructor() {}
+  /* queryParams = '' ;
  searchKeyword = '';
 constructor( private router : Router,
              private activatedRouter : ActivatedRoute) { 
  this.activatedRouter.params.subscribe(data => {
    this.searchKeyword =data.id;
- });
-} */
+ }); 
+ } */
+ 
 
   ngOnInit(): void {
-  }
-
+  } 
+/*updateSearch(){
+    const searchVal =this.searchKeyword;
+    this.router.navigate(['product-id',searchVal]);
+}
+} */
 }
