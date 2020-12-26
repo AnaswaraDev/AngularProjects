@@ -10,15 +10,15 @@ export class SigninComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  loginUser(signInForm : NgForm)
+  /* loginUser(signInForm : NgForm)
   {
-    console.log(signInForm);
+   console.log(signInForm);
     console.log("email :  "+signInForm.value.emailAddressField); //extract email here
     console.log("pass:  "+signInForm.value.passwordFeild);
     console.log("terms :  " +signInForm.value.termsFeild);
     console.log("radio:  "+signInForm.value.genderFeild);
-    console.log("notes :  "+signInForm.value.notesFeild);
-  }
+    console.log("notes :  "+signInForm.value.notesFeild); 
+  }  */
 }
 
 

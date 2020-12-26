@@ -17,7 +17,11 @@ import { ProductIdComponent } from './product-id/product-id.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { SigninComponent } from './signin/signin.component' ;
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
+//import { ReactiveFormsModule }  from '@angular/forms';
+import { ReactiveFormsModule }  from '@angular/forms';
+
 ///import { NgForm }   from '@angular/forms';
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { FormsModule } from '@angular/forms';
     ProductIdComponent,
     PageNotFoundComponent,
     AdminHomeComponent,
-    SigninComponent ,
+    SigninComponent,
+    CheckoutComponent,
+    //ReactiveformComponent,
+    
+    
     
   ],
   imports: [
@@ -40,7 +48,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     TodoModule,
     FormsModule,
+    ReactiveFormsModule,
     NgModelModule,
+  
     //NgForm
   ], 
   providers: [
