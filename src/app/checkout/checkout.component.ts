@@ -25,11 +25,12 @@ export class CheckoutComponent implements OnInit {
                     Validators.email] ],
       Quantity:  [ '' , Validators.required] ,
       terms:  [ '' , Validators.requiredTrue] ,
+      
      
     });
 
-
-   }
+  
+  }
    ngOnInit(): void { 
 
      /*this.checkoutForm.get('emailAddr').valueChanges.subscribe(data=> {
@@ -43,22 +44,25 @@ export class CheckoutComponent implements OnInit {
        this.checkoutForm.valueChanges.subscribe(data=>{
          console.log(data);
        
-       });
+       }); 
        // 
        // learning to use status changes on Formcontrol
 
        /* this.checkoutForm.get('emailAddr')?.statusChanges.subscribe(data => {
             console.log(data);
-       });  */
+       }); */
         //dynamically we can capture the state of validation of 'entire' form.
-      this.checkoutForm.statusChanges.subscribe(fromState => {
+
+     this.checkoutForm.statusChanges.subscribe(fromState => {
             console.log(fromState);
-      });
+      });  
         
      
+     
+
    }
 
-
+  
   /* ngOnInit(): void {  
     this.checkoutForm.setValue({   //using set value we are setting entire form value
       emailAddr : 'rohan@gmail.com' ,
@@ -74,19 +78,19 @@ export class CheckoutComponent implements OnInit {
       //terms : true
     });  //we can omit or leave any value
   } */
- /*   postdata(){
+    postdata(){
       console.log( this.checkoutForm); //capturing date
       console.log( this.checkoutForm.value);//Give value of all form control of the form
       console.log( this.checkoutForm.value.emailAddr); //extract value of form control individually
       console.log( this.checkoutForm.value.Quantity);
-      console.log( this.checkoutForm.value.terms);
+      console.log( this.checkoutForm.value.terms); 
  //this.resetForm();
      // console.log( 'entire form value' *this.checkoutForm.value);
-    //  console.log( 'email address'*this.checkoutForm.value);
-  } */
- resetForm(){
+    //  console.log( 'email address'*this.checkoutForm.value); 
+ }  
+  resetForm(){
     this.checkoutForm.reset(); //we will use reset method to reset the entire form in the one shot
- }
+ } 
 
 
 }
