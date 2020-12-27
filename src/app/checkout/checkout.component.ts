@@ -25,7 +25,15 @@ export class CheckoutComponent implements OnInit {
                     Validators.email] ],
       Quantity:  [ '' , Validators.required] ,
       terms:  [ '' , Validators.requiredTrue] ,
-      
+     /* items :this.formbuilder.array([ 
+        this.formbuilder.group({
+          itemId :['1'],
+          itemName :['ARC'],
+          itemDesc :['tutorial'],
+          itemDone : [ '' ,Validators.requiredTrue  ]
+
+        })
+        ]) */
      
     });
 
