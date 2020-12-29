@@ -12,13 +12,19 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminGuardGuard } from './admin-guard.guard';
 import { SigninComponent } from './signin/signin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import {ObservableComponent } from './observable/observable.component';
+import {ContactsComponent } from './contacts/contacts.component';
 //import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+
 
 
 const routes: Routes = [ 
   {path :'' , redirectTo : 'products', pathMatch :'full'} ,
   {path : 'signin', component : SigninComponent } ,
   {path : 'checkout', component : CheckoutComponent} ,
+  {path : 'observable', component : ObservableComponent} ,
+  {path : 'contacts', component : ContactsComponent} ,
+
   //{path : 'reactiveform', component : ReactiveformComponent } ,
   { path : 'admin', component: AdminHomeComponent, canActivate : [AdminGuardGuard] },
  /* { path :  'products', 

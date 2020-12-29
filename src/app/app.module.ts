@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { CheckoutComponent } from './checkout/checkout.component';
 //import { ReactiveFormsModule }  from '@angular/forms';
 import { ReactiveFormsModule }  from '@angular/forms';
+import { ObservableComponent } from './observable/observable.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 ///import { NgForm }   from '@angular/forms';
 @NgModule({
@@ -38,6 +40,8 @@ import { ReactiveFormsModule }  from '@angular/forms';
     AdminHomeComponent,
     SigninComponent,
     CheckoutComponent,
+    ObservableComponent,
+    ContactsComponent,
     //ReactiveformComponent,
     
     

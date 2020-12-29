@@ -127,9 +127,9 @@ export class CheckoutComponent implements OnInit {
      
 this.items.push(newItem);
    }
- removeItem(itemId){
+ /*removeItem(itemId){
    this.items.removeAt(itemId);
- }
+ } */
   
   /* ngOnInit(): void {  
     this.checkoutForm.setValue({   //using set value we are setting entire form value
