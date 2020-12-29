@@ -24,6 +24,8 @@ import { ReactiveFormsModule }  from '@angular/forms';
 import { ObservableComponent } from './observable/observable.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
+import { HttpClientModule} from '@angular/common/http';
+//import { HttpModule } from '@angular/http';
 ///import { NgForm }   from '@angular/forms';
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     FormsModule,
     ReactiveFormsModule,
     NgModelModule,
+    HttpClientModule
   
     //NgForm
   ], 

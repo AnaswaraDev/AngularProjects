@@ -1,37 +1,65 @@
-{ 
-    "contacts": [
-
-        {
-            "id": 1 ,
-             "firstName" : "ARC" , 
-             "lastName": "Turorials"
-            },
-        {
-        "id": 2 ,
-        "firstName" : "Raj" , 
-        "lastName": "kumar"
-        },
-        {
-            "id": 3 ,
-            "firstName" : "suresh" , 
-            "lastName": "Appa"
-        },
-        {
-           "id": 4 ,
-           "firstName" : "you" , 
-           "lastName": "Angular"
-       }
-    ] ,
-
-    "comments": [
-    
-        {
-        "id": 1 ,
-         "body" : "some comment" , 
-         "postId": 1
-        }
-    ],
-    "profile" : {
-        "name" : "typecode"
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "ARC",
+      "lastName": "Turorials"
+    },
+    {
+      "id": 2,
+      "firstName": "Raj",
+      "lastName": "kumar"
+    },
+    {
+      "id": 3,
+      "firstName": "suresh",
+      "lastName": "Appa"
+    },
+    {
+      "id": 4,
+      "firstName": "Rohan",
+      "lastName": "Angular"
+    },
+    {
+      "id": 5,
+      "firstName": "Raj",
+      "lastName": "kumar"
+    },
+    {
+      "id": "rohan"
+    },
+    {
+      "id": "sona"
+    },
+    {
+      "id": "7",
+      "firstName": "ANASWARA",
+      "lastName": "ANASWARA"
+    },
+    {
+      "id": "8",
+      "firstName": "sona",
+      "lastName": "sona"
+    },
+    {
+      "id": "10",
+      "firstName": "Rohit",
+      "lastName": "Rohit"
+    },
+    {
+      "id": "11",
+      "firstName": "sai",
+      "lastName": "sai"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typecode"
+  }
 }

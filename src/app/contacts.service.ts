@@ -1,20 +1,30 @@
 import { Injectable } from '@angular/core';
+import { HttpClient,HttpHeaders,HttpParams } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactsService {
 
-  constructor() { }
+  constructor(private HttpClient: HttpClient) { }
+
   getContacts(){
-    //HTTP  calls here
-    const contactList  = [
-      {contactId : 1, contactName : 'anuniya'},
-      {contactId : 1, contactName : 'Rohan'},
-      {contactId : 1, contactName : 'niya'},
-      {contactId : 1, contactName : 'niyah'}
-    ];
-    return  contactList;
+   
+    //headers
+    const httpHeaders = new HttpHeaders();
+    httpHeaders.append('content-type', 'application/json');
+
+ // get the http get methiod working  for you
+ // once you get it - in coming tutorials
+    return this.HttpClient.get('http://localhost:3000/contacts');
+    
+  }
+
+  createContact(createBody :any ) {
+    const httpHeaders = new HttpHeaders();
+    httpHeaders.append('content-type', 'application/json');
+
+    return this.HttpClient.post('http://localhost:3000/contacts', createBody,{headers: httpHeaders}); //create resourse-parameter
   }
   callingFromTemplate(){
     console.log('calling from template direcrtly');

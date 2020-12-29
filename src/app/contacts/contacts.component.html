@@ -1,9 +1,34 @@
 <p>contacts works!</p>
-<h4>list of contacts</h4>
+
 
 <ul>
     <li *ngFor="let contact of contactList">
-        {{ contact.contactName }}
+        {{ contact.firstName }}
     </li>
 </ul>    
-<button (click)="contactService.callingFromTemplate()">Calling Directly</button>
+<!--<button (click)="contactService.callingFromTemplate()">Calling Directly</button> -->
+
+<div *ngIf= "msgTrue">contacted created successfully</div>
+<div class="container">
+    <form #addNewContactForm="ngForm" (ngSubmit)="addNewContact(addNewContactForm)">
+        <div class="form-group">
+            <label for="exampleInputEmail">Enter ID</label>
+            <input type="text" class="form-control" name="id" required ngModel/>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail">Enter first name</label>
+            <input type="text" class="form-control" name="firstName" required ngModel/>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail">Enter second name</label>
+            <input type="text" class="form-control" name="lastName" required ngModel/>
+        </div>
+        <button class="form-control" [disabled]="!addNewContactForm.valid">Add new contact</button>
+    </form>    
+</div>
+
+<button (click)="addNewContact()">add new contact</button>
+
+
+
+
