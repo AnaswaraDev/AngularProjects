@@ -16,4 +16,7 @@ export class ContactsService {
     ];
     return  contactList;
   }
+  callingFromTemplate(){
+    console.log('calling from template direcrtly');
+  }
 }
