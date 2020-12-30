@@ -26,7 +26,20 @@ export class ContactsService {
 
     return this.HttpClient.post('http://localhost:3000/contacts', createBody,{headers: httpHeaders}); //create resourse-parameter
   }
-  callingFromTemplate(){
-    console.log('calling from template direcrtly');
+
+  updateContact(contactId:any,updatedBody:any){
+    const endpointURL = 'http://localhost:3000/contacts/' +contactId;
+    return this.HttpClient.put(endpointURL,updatedBody);
   }
-}
+ 
+  deleteContact(contactId :any){
+    const deleteEndpoint = 'http://localhost:3000/contacts/' + contactId;
+    return this.HttpClient.delete(deleteEndpoint);
+  }
+
+
+
+  callingFromTemplate(){
+    console.log('calling from template directly');
+  }
+} 

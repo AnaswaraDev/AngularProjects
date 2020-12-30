@@ -1,9 +1,7 @@
 <p>contacts works!</p>
-
-
 <ul>
     <li *ngFor="let contact of contactList">
-        {{ contact.firstName }}
+        {{ contact.id}}    {{ contact.firstName }}   {{ contact.lastName }}
     </li>
 </ul>    
 <!--<button (click)="contactService.callingFromTemplate()">Calling Directly</button> -->
@@ -23,12 +21,14 @@
             <label for="exampleInputEmail">Enter second name</label>
             <input type="text" class="form-control" name="lastName" required ngModel/>
         </div>
-        <button class="form-control" [disabled]="!addNewContactForm.valid">Add new contact</button>
+       <button class="form-control" [disabled]="!addNewContactForm.valid">Add new contact</button> 
     </form>    
 </div>
 
-<button (click)="addNewContact()">add new contact</button>
+<!--<button (click)="addNewContact()">add new contact</button>-->
 
+<button (click)="updateContact(3);">update contact Id :3</button>
 
+<button (click)="deleteContact(2);">delete contact Id :2</button>
 
 

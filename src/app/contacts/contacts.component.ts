@@ -37,6 +37,20 @@ export class ContactsComponent implements OnInit {
     });
   }
   
+updateContact(contactId :any){
+  const newFormData = {id: contactId , firstName: 'steve', lastName: 'johnson'}; //implement put method in component.ts
+  this.contactsService.updateContact(contactId, newFormData).subscribe(data  =>{ 
+    this.msgTrue =true;
+  });
+}
+//this contactid will be dynamic and will usually comne from UI
+deleteContact(contactId :any){
+  this.contactsService.deleteContact(contactId).subscribe(data =>{
+     console.log(data);
+  });
+}
+
+
 
 
 }
